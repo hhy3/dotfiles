@@ -117,48 +117,22 @@ if ! shopt -oq posix; then
 fi
 source "$HOME/.cargo/env"
 
-export PATH=$PATH:/home/hy/qemu-5.0.0
-export PATH=$PATH:/home/hy/qemu-5.0.0/riscv64-softmmu
-export PATH=$PATH:/home/hy/qemu-5.0.0/riscv64-linux-user
+export PATH=$PATH:$HOME/qemu-5.0.0
+export PATH=$PATH:$HOME/qemu-5.0.0/riscv64-softmmu
+export PATH=$PATH:$HOME/qemu-5.0.0/riscv64-linux-user
 
-export PATH=$PATH:'/mnt/c/Program Files/Typora'
-# export PATH=$PATH:/home/hy/.local/bin
 export PATH=$PATH:.
-export PATH=$PATH:'/mnt/c/Sublime Text 3'
-
 
 export PS1="\[\033[38;5;212m\]\u\[$(tput sgr0)\] \t \[$(tput sgr0)\]\[\033[38;5;6m\]\W\[$(tput sgr0)\]\[\033[38;5;69m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]: \[$(tput sgr0)\]"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/hy/apps/miniconad3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/hy/apps/miniconad3/etc/profile.d/conda.sh" ]; then
-        . "/home/hy/apps/miniconad3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/hy/apps/miniconad3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-export TVM_HOME=/home/hy/tvm
-export PATHONPATH=$TVM_HOME/python:${PYTHONPATH}
 
 export PATH=$PATH:~/cf-tool/cf_v1.0.0_linux_64
 
 export PATH=$PATH:/usr/lib/go/bin
 
-export PATH=$PATH:~/leetcode-cli
-
-
-export CP_HOME=/home/hy/cp
+export CP_HOME=$HOME/cp
 export PATH=$PATH:$CP_HOME
 
-export CP_UTIL_HOME=$CP_HOME/util
-export PATH=$PATH:$CP_UTIL_HOME/addlib
+export CPLUS_INCLUDE_PATH=$CP_HOME/ac-library/include
 
-export CPLUS_INCLUDE_PATH=$CP_HOME/ac-library
+export PATH=$PATH:~/apps/kotlin-native-linux-x86_64-1.6.10/bin

@@ -1,3 +1,5 @@
 [user]
 	email = rekind133@outlook.com
 	name = Hy
+[core]
+	editor = vim
