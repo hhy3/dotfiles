@@ -55,6 +55,9 @@ set foldenable
 set foldmethod=manual
 set updatetime=100
 
+set ts=2
+set expandtab
+
 highlight clear SignColumn
 highlight GitGutterAdd ctermfg=green
 highlight GitGutterChange ctermfg=yellow
@@ -77,3 +80,6 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)]]]"
 "let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 let g:rustfmt_autosave = 1
+
+
+let g:airline#extensions#tabline#enabled = 1
