@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-source "$HOME/.cargo/env"
+# source "$HOME/.cargo/env"
 
 export PATH=$PATH:$HOME/qemu-5.0.0
 export PATH=$PATH:$HOME/qemu-5.0.0/riscv64-softmmu
