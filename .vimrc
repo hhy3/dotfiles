@@ -1,3 +1,4 @@
+set showcmd
 set sb
 set nocompatible
 
@@ -8,7 +9,7 @@ syntax on
 set number
 
 " Show relative line number
-set relativenumber
+" set relativenumber
 
 
 " The backspace key has slightly unintuitive behavior by default. For example,
@@ -99,8 +100,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'godlygeek/tabular'
-Plugin 'preservim/vim-markdown'
+Plugin 'SirVer/ultisnips'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'VundleVim/Vundle.vim'
@@ -145,3 +145,5 @@ set statusline+=%*
 " let g:syntastic_auto_loc_list = 1
 " let g:syntastic_check_on_open = 1
 " let g:syntastic_check_on_wq = 0
+"
+let g:UltiSnipsExpandTrigger="<CR>"
