@@ -1,7 +1,7 @@
 set showcmd
 set sb
 set nocompatible
-
+set title
 " Syntax highlighting
 syntax on
 
@@ -10,6 +10,8 @@ set number
 
 " Show relative line number
 " set relativenumber
+
+set viminfo='1000
 
 
 " The backspace key has slightly unintuitive behavior by default. For example,
