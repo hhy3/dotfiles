@@ -27,3 +27,5 @@
 [include]
   path = ~/.cofig/delta/themes.gitconfig
 
+[http]
+	sslVerify = false

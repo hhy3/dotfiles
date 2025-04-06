@@ -4,15 +4,13 @@ function fish_prompt -d "Write out the prompt"
 end
 
 set -x PATH . $PATH
+set -x PATH "$HOME/.local/bin" $PATH
 set -x PATH /usr/local/cuda/bin $PATH
 set -x PATH "$HOME/.cargo/bin" $PATH
 set -x PATH "$HOME/.nvim/bin" $PATH
 
+set -x HF_ENDPOINT https://hf-mirror.com
+
 git config --global https.proxy
 git config --global http.sslVerify false
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-eval ~/miniconda3/bin/conda "shell.fish" "hook" $argv | source
-# <<< conda initialize <<<
 
